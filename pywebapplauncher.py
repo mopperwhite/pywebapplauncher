@@ -66,7 +66,13 @@ def main():
         window=QWebView()
         if maxsize:
                 window.showMaximized()
-        window.page().networkAccessManager().setCookieJar(cookiejar);
+                
+        diskCache = QNetworkDiskCache(window);
+        location =QDesktopServices.storageLocation(QDesktopServices.CacheLocation);
+        diskCache.setCacheDirectory(location);
+        window.page().networkAccessManager().setCache(diskCache);        
+        
+        window.page().networkAccessManager().setCookieJar(cookiejar)
         window.setWindowTitle(name)
         QObject.connect(window,SIGNAL("linkClicked(const QUrl&)"),linkClicked)
         window.setUrl(QUrl(url))
