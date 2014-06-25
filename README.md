@@ -9,11 +9,14 @@ Usage: pywebapplauncher.py [options]
 
 Options:
 
-  -h, --help            show this help message and exit
+  -h, --help
+  show this help message and exit
   
-  -u URL, --url=URL     The url of the webapp.
+  -u URL, --url=URL     
+                        The url of the webapp.
   
-  -n NAME, --name=NAME  The name of the webapp.
+  -n NAME, --name=NAME  
+                        The name of the webapp.
   
   -c COOKIESFILE, --cookiesfile=COOKIESFILE
   
