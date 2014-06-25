@@ -13,9 +13,11 @@ Options:
   show this help message and exit
   
   -u URL, --url=URL     
+  
                         The url of the webapp.
   
   -n NAME, --name=NAME  
+  
                         The name of the webapp.
   
   -c COOKIESFILE, --cookiesfile=COOKIESFILE
